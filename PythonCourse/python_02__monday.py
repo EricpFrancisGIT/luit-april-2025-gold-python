@@ -1,7 +1,7 @@
 from helpers import *
 
 def create_instances(ec2_client, ami_type="Ubuntu", instance_amount=1):
-    for i in range(instance_amount)
+    for i in range(instance_amount):
         if ami_type.lower().strip() == "Ubuntu":
             create_ubuntu_instance(ec2_client)
             print("Create Ubuntu")
