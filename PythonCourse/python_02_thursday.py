@@ -1,20 +1,35 @@
 from helpers import *
+from typing import List, Dict, Any
 
-def print_bucket_names(s3_client):
-    bucket_names = list_buckets(s3_client)
+
+def print_bucket_names(s3_client: Any) -> None:
+    """
+    Prints the names of all S3 buckets returned by the list_buckets helper function.
+
+    Args:
+        s3_client (Any): Boto S3 client object or equivalent.
+
+    """
+    bucket_names = List[str]= list_buckets(s3_client)
 
     for bucket_name in bucket_names: # same as "\n.join(bucket_names)"
         print(bucket_name)
   
-def print_instance_ids(ec2_client):
-        instances = describe_instances(ec2_client)
+def print_instance_ids(ec2_client: Any) -> None:
+    """
+    Prints the instance IDs from a list of EC2 instances returned by the describe_instances helper function. 
 
-        instance_ids = []
-        for instance in instances:
-            instance_ids.append = (instance['InstanceId'])
+    Args: 
+        ec2_client (Any): Boto EC2 client object or equivalent.
+    """
+    instances = List[Dict[str, Any]] = describe_instances(ec2_client)
+
+    instance_ids = []
+    for instance in instances:
+        instance_ids.append = (instance['InstanceId'])
              
-        for instance_id in instance_ids:
-            print(instance_id)
+    for instance_id in instance_ids:
+        print(instance_id)
 
 
 if "__main__" == __name__:
