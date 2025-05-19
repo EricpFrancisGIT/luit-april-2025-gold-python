@@ -18,4 +18,6 @@ for folder_name in folders:
         os.makedirs(folder_path)
 
 # Move files to the corresponding subfolder
-for file_name in os.
+for file_name in os.listdir(desktop_path):
+    # Placeholder: Add logic to move files based on their extension
+    pass
