@@ -1,7 +1,10 @@
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 contacts = {}
 =======
+=======
+>>>>>>> Stashed changes
 contacts = {
     'number': 4,
     'students':
@@ -15,5 +18,9 @@ contacts = {
 
 print('Student emails:')
 for student in contacts['students']:
+<<<<<<< Updated upstream
+       print(student['email'])
+>>>>>>> Stashed changes
+=======
        print(student['email'])
 >>>>>>> Stashed changes
