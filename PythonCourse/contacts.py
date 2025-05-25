@@ -2,8 +2,11 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 contacts = {}
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -23,6 +26,10 @@ print('Student emails:')
 for student in contacts['students']:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+       print(student['email'])
+>>>>>>> Stashed changes
+=======
        print(student['email'])
 >>>>>>> Stashed changes
 =======
